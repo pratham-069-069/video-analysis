@@ -1,0 +1,40 @@
+# requirements.txt
+
+# --- Core Libraries ---
+pandas           # Data manipulation, CSV handling
+numpy            # Numerical operations (often a dependency)
+python-dotenv    # Loading environment variables from .env file
+
+# --- AWS Interaction ---
+boto3            # AWS SDK for Python (for S3, etc.)
+
+# --- Google API (YouTube) ---
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+
+# --- Web Requests & Utilities ---
+requests         # General HTTP requests (sometimes needed alongside google client)
+isodate          # Parsing ISO 8601 durations (from YouTube metadata)
+yt-dlp           # Command-line tool wrapper (if calling via subprocess) or just for manual download
+
+# --- Video/Audio Processing (Install now, use in Phase 2) ---
+opencv-python    # OpenCV for video frame processing
+# Note: Whisper installation can be more involved, do it separately in Phase 2 if needed
+# openai-whisper   # Speech-to-text (uncomment when ready for Phase 2)
+# moviepy          # For audio extraction (if needed, uncomment for Phase 2)
+
+# --- NLP (Install now, use in Phase 3) ---
+nltk             # Natural Language Toolkit
+textblob         # Simple NLP tasks (sentiment)
+# spacy            # Alternative NLP library (uncomment if using)
+
+# --- Database Connectors (Install now, use later) ---
+pymongo          # MongoDB driver
+snowflake-connector-python[pandas] # Snowflake connector with Pandas support
+
+# --- Spark (Install now, use in Phase 4) ---
+pyspark          # Spark Python API
+
+# --- Airflow (Will be handled by Docker later, but good to list provider if needed) ---
+# apache-airflow-providers-amazon # If needing specific AWS operators not in core

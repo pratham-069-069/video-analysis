@@ -1,0 +1,43 @@
+# .gitignore
+
+# Environment and Credentials
+.env
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data Files (adjust if you want to track specific small data files)
+data/
+*.mp4
+*.wav
+*.jpg
+*.png
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Airflow specific (if running locally without Docker sometimes)
+logs/
+*.pid
+airflow.db
+unittests.cfg
+airflow.cfg
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
